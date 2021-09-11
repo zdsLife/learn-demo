@@ -1,0 +1,62 @@
+
+new file directory git-demo project
+
+pwd
+/Users/gx/Downloads/code
+
+// 进入新建的项目git-demo 最外层目录
+cd git-demo
+
+// 初始化这个目录
+git init 初始化git
+Initialized empty Git repository in /Users/gx/Downloads/code/git-demo/.git/
+
+// 把这个目录下的文件add 到这个git
+git add .
+
+// 提交本次初始化的记录
+git commit -m '[新的开始 init]'
+[master (root-commit) ab032f4] [新的开始 init]
+ 11 files changed, 730 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .mvn/wrapper/MavenWrapperDownloader.java
+ create mode 100644 .mvn/wrapper/maven-wrapper.jar
+ create mode 100644 .mvn/wrapper/maven-wrapper.properties
+ create mode 100755 mvnw
+ create mode 100644 mvnw.cmd
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/zds/demo/GitDemoApplication.java
+ create mode 100644 src/main/resources/application-test.yml
+ create mode 100644 src/main/resources/application.properties
+ create mode 100644 src/test/java/com/zds/demo/GitDemoApplicationTests.java
+
+
+
+
+// 看一下 提交的git 日志log
+git log
+commit ab032f49213cc0a23dc2880d72d85f5f1dd295c2 (HEAD -> master)
+Author: zhudongsheng <zhudongsheng@gxcards.com>
+Date:   Fri Sep 10 14:45:32 2021 +0800
+
+    [新的开始 init]
+
+//看一下当前的分支 只有本地的master
+还没有与远端的 gitlab or 码云 or github 进项本地库和远端库的关联
+git branch
+* master
+
+对于新建的分支重命名
+本地新建项目后 加入到本地的git 库
+
+关联到远程库
+需要与远端库关联
+
+git remote add origin 你的远程库地址
+
+git remote add origin https://github.com/zdsmxt/learn-demo.git
+
+获取远程库与本地同步合并（如果远程库「不为空」则必须做这一步，否则后面的提交会失败）
+
+git pull --rebase origin master
+
