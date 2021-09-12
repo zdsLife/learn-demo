@@ -51,7 +51,6 @@ git branch
 
 关联到远程库
 需要与远端库关联
-
 git remote add origin 你的远程库地址
 
 git remote add origin https://github.com/zdsmxt/learn-demo.git
