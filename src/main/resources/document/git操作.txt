@@ -61,3 +61,5 @@ git remote add origin https://github.com/zdsmxt/learn-demo.git
 git pull --rebase origin master
 
 1.添加一个新的文件
+
+测试 feature/local7
